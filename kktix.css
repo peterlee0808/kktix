@@ -350,6 +350,9 @@ header {
 .card-container {
   padding: 20px 0;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .card-king {
@@ -358,14 +361,18 @@ header {
 
 .card-detail {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-items: flex-start;
 }
 .card-date i {
   padding-right: 10px;
 }
 .check {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #fefefe;
   color: black;
   border-radius: 2px;
@@ -373,10 +380,9 @@ header {
   font-weight: 700;
   line-height: 27px;
   margin: 6px 6px 0 0;
-
   border: 1px solid black;
 }
-.check span {
+.check-text {
   padding: 0 10px;
 }
 .check i {
@@ -392,6 +398,23 @@ header {
   /* padding: 6px 0 0; */
   text-align: center;
 }
+@media screen and (min-width: 371px) {
+  .card-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .check {
+    width: 100px;
+    height: 30px;
+  }
+  .check-text {
+    padding: 0;
+    padding-left: 5px;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .header-container {
     width: 100%;
@@ -464,11 +487,24 @@ header {
   .headlines-container {
     padding: 20px 80px;
   }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
 }
 
 @media screen and (min-width: 990px) {
   .headlines-container {
     padding: 20px 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
 }
 
