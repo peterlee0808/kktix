@@ -371,6 +371,21 @@ header {
   gap: 5px;
   position: absolute;
 }
+.card {
+  position: relative;
+}
+.play-title {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  text-align: left;
+  position: absolute;
+  top: 70%;
+  left: 10px;
+}
 .card-king {
   max-width: 100%;
 }
@@ -783,6 +798,9 @@ address {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
+  }
+  .sport {
+    display: none;
   }
   /* .ad-container {
     margin-top: 120px;
