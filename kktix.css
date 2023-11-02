@@ -224,6 +224,9 @@ header {
   background-color: #f8f8f8;
   margin: 20px 0 5px 0;
 }
+.category-list h2 {
+  display: none;
+}
 .category-card {
   display: flex;
   flex-direction: column;
@@ -358,6 +361,15 @@ header {
   flex-direction: column;
   gap: 30px;
   position: relative;
+}
+.category-list h1 {
+  display: none;
+}
+.more-btn {
+  display: none;
+}
+.more-btn-large {
+  display: none;
 }
 .sport {
   display: flex;
@@ -790,7 +802,42 @@ address {
     width: 13px;
     height: 14px;
   }
-
+  .category-title {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+  .category-list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .category-list h1 {
+    display: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 19.2px;
+    margin: 12px 0;
+  }
+  .more-btn {
+    display: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .more-btn a {
+    text-decoration: none;
+    color: #25c054;
+  }
   .headlines-container {
     padding: 20px 80px;
   }
@@ -882,6 +929,38 @@ address {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+  .category-list h1 {
+    display: none;
+  }
+  .category-list h2 {
+    display: unset;
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+  }
+  .more-btn {
+    display: none;
+  }
+  .more-btn-large {
+    display: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+  }
+  .more-btn-large a {
+    color: #64c025;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
   }
 }
 
