@@ -452,11 +452,12 @@ header {
 } */
 
 .activity-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 .activity-title h4 {
@@ -497,6 +498,48 @@ header {
   line-height: 48px;
   text-decoration: none;
 }
+
+.cooperation-firm-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 55px;
+  background-color: #474a44;
+}
+
+.container-title {
+  color: #999999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0px 23px 20px;
+}
+
+.firm-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 30px;
+}
+.firm-card {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backstage {
+  max-width: 72px;
+  max-height: 72px;
+}
+.firm-name {
+  display: none;
+}
 @media screen and (min-width: 371px) {
   .card-detail {
     display: flex;
@@ -522,6 +565,25 @@ header {
     height: 500px;
   }
 } */
+@media screen and (min-width: 570px) {
+  .container-title {
+    font-size: 28px;
+    margin: 20px 23px 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+  .firm-name {
+    display: unset;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .backstage {
+    max-width: 125px;
+    max-height: 125px;
+  }
+}
 
 @media screen and (min-width: 769px) {
   .header-container {
@@ -616,6 +678,13 @@ header {
   .phone-video {
     left: 22px;
   } */
+  .firm-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+  }
 }
 
 @media screen and (min-width: 990px) {
