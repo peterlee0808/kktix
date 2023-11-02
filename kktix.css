@@ -398,6 +398,34 @@ header {
   /* padding: 6px 0 0; */
   text-align: center;
 }
+
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.explore-container a {
+  display: flex;
+  text-decoration: none;
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.05);
+  color: #000000;
+  background-color: #f8f8f8;
+  border: 1px solid black;
+  padding: 10px 80px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.down {
+  padding: 30px 0;
+}
+.down i {
+  font-size: 24px;
+}
 @media screen and (min-width: 371px) {
   .card-detail {
     display: flex;
@@ -504,7 +532,7 @@ header {
   .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 
