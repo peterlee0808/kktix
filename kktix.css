@@ -426,6 +426,77 @@ header {
 .down i {
   font-size: 24px;
 }
+
+/* app section */
+/* .ad-container {
+  background-image: url(pic/bg.jpg);
+  margin-top: 120px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.container {
+  padding: 0;
+}
+.app-inner {
+  padding: 110px 0 0 400px;
+  height: 540px;
+  position: relative;
+}
+.phone-video {
+  width: 206px;
+  height: 365px;
+  position: absolute;
+  left: 66px;
+  top: 77px;
+} */
+
+.activity-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.activity-title h4 {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 12px 0 0;
+  text-align: center;
+}
+
+.activity-content {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 12px 0 25px;
+  text-align: center;
+}
+
+.active-btn {
+  width: 360px;
+  background-color: #64c025;
+  border-radius: 5px;
+  box-shadow: #000000 0 0 0 0;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.active-btn a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+}
 @media screen and (min-width: 371px) {
   .card-detail {
     display: flex;
@@ -442,6 +513,15 @@ header {
     padding-left: 5px;
   }
 }
+
+/* @media screen and (min-width: 585px) {
+  .app-inner {
+    padding-left: 0;
+    height: auto;
+    padding-bottom: 30px;
+    height: 500px;
+  }
+} */
 
 @media screen and (min-width: 769px) {
   .header-container {
@@ -520,12 +600,36 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
   }
+  /* .ad-container {
+    margin-top: 120px;
+    padding-top: 300px;
+  }
+  .container {
+    width: 96%;
+    padding: 30px 0;
+  }
+  .app-inner {
+    padding-top: 60px;
+    padding-left: 48%;
+    height: 500px;
+  }
+  .phone-video {
+    left: 22px;
+  } */
 }
 
 @media screen and (min-width: 990px) {
   .headlines-container {
     padding: 20px 30px;
   }
+  .container {
+    width: 760px;
+  }
+  /* .app-inner {
+    padding-top: 60px;
+    padding-left: 380px;
+    height: 500px;
+  } */
 }
 
 @media screen and (min-width: 1024px) {
